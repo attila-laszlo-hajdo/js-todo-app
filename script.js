@@ -5,6 +5,11 @@ const taskList = document.getElementById("taskList");
 button.addEventListener("click", function(){
 
   const task = input.value;
+
+  if(task === ""){
+    return;
+  }
+
   const li = document.createElement("li");
   li.textContent = task;
   taskList.appendChild(li);
