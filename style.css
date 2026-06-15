@@ -40,9 +40,11 @@ ul{
 
 li{
   margin-top: 10px;
+  padding-left: 10px;
   display: flex;
   justify-content: space-between;
   align-items: center;
+  cursor: pointer;
 }
 
 li button{
@@ -52,4 +54,8 @@ li button{
   border: none;
   border-radius: 4px;
   cursor: pointer;
+}
+
+li.completed{
+  text-decoration: line-through;
 }
