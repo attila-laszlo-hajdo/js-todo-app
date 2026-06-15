@@ -1,14 +1,21 @@
 const input = document.getElementById("taskInput");
 const button = document.getElementById("addBtn");
 const taskList = document.getElementById("taskList");
+const errorMessage = document.getElementById("errorMessage");
 
 button.addEventListener("click", function(){
 
+  input.value = input.value.trim();
   const task = input.value;
 
   if(task === ""){
+    input.classList.add("error");
+    errorMessage.textContent = "Please enter task!"
     return;
   }
+
+  input.classList.remove("error");
+  errorMessage.textContent = "";
 
   const li = document.createElement("li");
   li.textContent = task;

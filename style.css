@@ -20,6 +20,15 @@ input{
   width: 70%;
 }
 
+.error{
+  border: 1px solid red;
+}
+
+.error-message{
+  color: red;
+  font-size: 12px;
+}
+
 button{
   padding: 10px;
   cursor: pointer;
