@@ -61,6 +61,6 @@ li button{
   cursor: pointer;
 }
 
-li.completed{
+span.completed{
   text-decoration: line-through;
 }

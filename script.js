@@ -18,19 +18,21 @@ button.addEventListener("click", function(){
   errorMessage.textContent = "";
 
   const li = document.createElement("li");
-  li.textContent = task;
+  const span = document.createElement("span");
+  span.textContent = task;
 
   const deleteBtn = document.createElement("button");
   deleteBtn.textContent = "Delete";
 
   li.addEventListener("click", function(){
-    li.classList.toggle("completed");
+    span.classList.toggle("completed");
   })
 
   deleteBtn.addEventListener("click", function(){
     li.remove();
   });
 
+  li.appendChild(span);
   li.appendChild(deleteBtn);
   taskList.appendChild(li);
   input.value = "";
