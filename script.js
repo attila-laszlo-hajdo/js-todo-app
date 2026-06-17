@@ -25,10 +25,13 @@ button.addEventListener("click", function(){
   deleteBtn.textContent = "Delete";
 
   li.addEventListener("click", function(){
+    // console.log("LI clicked");
     span.classList.toggle("completed");
   })
 
-  deleteBtn.addEventListener("click", function(){
+  deleteBtn.addEventListener("click", function(event){
+    // console.log("DELETE clicked");
+    event.stopPropagation();
     li.remove();
   });
 
@@ -37,4 +40,10 @@ button.addEventListener("click", function(){
   taskList.appendChild(li);
   input.value = "";
   
+});
+
+input.addEventListener("keydown", function(event){
+  if(event.key === "Enter"){
+    button.click();
+  }
 });
