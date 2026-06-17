@@ -39,6 +39,7 @@ button.addEventListener("click", function(){
   li.appendChild(deleteBtn);
   taskList.appendChild(li);
   input.value = "";
+  input.focus();
   
 });
 
