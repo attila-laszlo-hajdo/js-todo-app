@@ -6,6 +6,7 @@
   <title>Todo App</title>
 
   <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="print.css">
 </head>
 <body>
   <div>
@@ -29,9 +30,13 @@
 
     <p id="errorMessage" class="error-message"></p>
 
-    <ul id="taskList"></ul>
+    <div id="listContainer">
+        <ul id="taskList"></ul>
+        <button id="printButton">Print</button>
+    </div>
 
   </div>
   <script src="script.js"></script>
+  <script src="print.js"></script>
 </body>
 </html>
