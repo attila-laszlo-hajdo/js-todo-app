@@ -1,0 +1,21 @@
+@media print {
+
+  #appHeader,
+  #taskInput,
+  #addBtn,
+  #printButton,
+  .delete-btn
+  {
+    display: none;
+  }
+
+  #taskList span::before{
+    content: "☐";
+    margin-right: 10px;
+  }
+
+  .container{
+      box-shadow: none;
+      border: 1px solid lightgray;
+    }
+}

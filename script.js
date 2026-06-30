@@ -22,6 +22,7 @@ button.addEventListener("click", function(){
   span.textContent = task;
 
   const deleteBtn = document.createElement("button");
+  deleteBtn.classList.add("delete-btn");
   deleteBtn.textContent = "Delete";
 
   li.addEventListener("click", function(){
